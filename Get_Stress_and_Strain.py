@@ -10,8 +10,8 @@ Love=np.loadtxt('output_Io.dat')
 
 def Get_Stress(thet,phi, M,h2=Love[4],l2=Love[6]):
 
-	thet=thet*180/np.pi
-	phi=phi*180/np.pi
+	thet=thet*np.pi/180
+	phi=phi*np.pi/180
 	a_star = 421700e3 #Semi-major axis in m
 	m_star = 1.8982e27 # Mass of Parent planet in kg
 	G = 6.67e-11 #Gravitational constant
